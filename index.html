@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSLA-Bank</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <header>
+      <h1>TSLA-Bank</h1>
+      <p>Check Bitcoin Exchange Rate</p>
+    </header>
+
+
+    <main>
+      <section id="exchange-rate">
+        <h2>Current Bitcoin Exchange Rate</h2>
+
+        <p id="rate">Loading...</p>
+
+        <button  onclick="fetchBitcoinRate()">
+          Refresh Rate</button>
+      </section>
+
+
+
+      <section id="conversion">
+        <h2>Convert USD to Bitcoin</h2>
+
+        <input type="number" id="usd-amount" placeholder="Enter amount in USD">
+
+        <button onclick="convertToBitcoin()">Convert</button>
+
+        <p id="btc-amount"></p>
+
+
+      </section>
+    </main>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
